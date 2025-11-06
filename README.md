@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here’s a **compact one-page README.md** — perfect for GitHub 👇
 
-## Getting Started
+---
 
-First, run the development server:
+````markdown
+# 📊 Dynamic Data Table Manager (Next.js + Redux + MUI)
 
+A modern **Dynamic Data Table Manager** built with **Next.js 14**, **TypeScript**, **Redux Toolkit**, and **Material UI (MUI v5)**.  
+Implements sorting, searching, pagination, dynamic columns, and CSV import/export — ideal for frontend interview tasks or real-world dashboards.
+
+---
+
+## 🚀 Features
+✅ Table with sorting, global search & client-side pagination  
+✅ Manage Columns (add / show / hide) with persistence (localStorage / Redux Persist)  
+✅ CSV Import (PapaParse) & Export (FileSaver.js / Blob)  
+💡 Bonus: Inline editing, row actions (edit/delete), dark mode, drag & drop reorder, responsive UI
+
+---
+
+## 🛠️ Tech Stack
+- **Next.js 14 (App Router)**  
+- **React 18 + TypeScript**  
+- **Redux Toolkit + Redux Persist**  
+- **Material UI v5**  
+- **React Hook Form**  
+- **PapaParse**, **FileSaver.js**
+
+---
+
+## ⚙️ Setup
 ```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/<your-username>/dynamic-data-table.git
+cd dynamic-data-table
+
+# 2️⃣ Install dependencies
+npm install
+
+# 3️⃣ Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# visit http://localhost:3000
+````
+
+---
+
+## 📁 Default Columns
+
+| Name             | Email         | Age        | Role             |
+| ---------------- | ------------- | ---------- | ---------------- |
+| Supports sorting | Global search | Pagination | Dynamic add/hide |
+
+---
+
+## 📂 Import / Export
+
+**Import CSV:** Upload and parse `.csv` using PapaParse (validates headers & data).
+**Export CSV:** Download visible table data as `.csv`.
+
+Example format:
+
+```csv
+Name,Email,Age,Role,Department,Location
+John Doe,john@example.com,30,Engineer,Product,Pune
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌗 Bonus Features (Optional)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* ✏️ Inline Editing with validation (React Hook Form)
+* 🗑️ Row Actions (Edit/Delete with confirmation)
+* 🧭 Column Drag & Drop (react-beautiful-dnd)
+* 🌙 Theme Toggle (Light/Dark mode)
+* 📱 Responsive UI (MUI Grid)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧩 Folder Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+ ├─ components/
+ │   ├─ DataTable.tsx
+ │   ├─ ManageColumnsModal.tsx
+ │   └─ InlineEditor.tsx
+ ├─ store/
+ │   ├─ tableSlice.ts
+ │   └─ columnsSlice.ts
+ ├─ hooks/
+ └─ types/
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧾 Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev       # start local dev
+npm run build     # build production
+npm run start     # run production
+npm run lint      # lint check
+```
+Would you like me to include **your name, GitHub username, and LinkedIn link** in the Author section before you upload it?
+```
