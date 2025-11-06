@@ -22,17 +22,17 @@ Implements sorting, searching, pagination, dynamic columns, and CSV import/expor
 - **PapaParse**, **FileSaver.js**
 
 ---
-## setup
-# 1️⃣ Clone the repository
+# setup
+### 1️⃣ Clone the repository
 git clone https://github.com/<your-username>/dynamic-data-table.git
 cd dynamic-data-table
 
-# 2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 npm install
 
-# 3️⃣ Start development server
+### 3️⃣ Start development server
 npm run dev
-# visit http://localhost:3000
+### visit http://localhost:3000
 
 
 ## 📁 Default Columns
@@ -40,21 +40,4 @@ npm run dev
 | Name             | Email         | Age        | Role             |
 | ---------------- | ------------- | ---------- | ---------------- |
 | Supports sorting | Global search | Pagination | Dynamic add/hide |
-
----
-
-## 📂 Import / Export
-
-**Import CSV:** Upload and parse `.csv` using PapaParse (validates headers & data).
-**Export CSV:** Download visible table data as `.csv`.
-
-Example format:
-
-```csv
-Name,Email,Age,Role,Department,Location
-John Doe,john@example.com,30,Engineer,Product,Pune
-
-
----
-
 
