@@ -22,9 +22,7 @@ Implements sorting, searching, pagination, dynamic columns, and CSV import/expor
 - **PapaParse**, **FileSaver.js**
 
 ---
-
-## ⚙️ Setup
-```bash
+## setup
 # 1️⃣ Clone the repository
 git clone https://github.com/<your-username>/dynamic-data-table.git
 cd dynamic-data-table
@@ -55,7 +53,6 @@ Example format:
 ```csv
 Name,Email,Age,Role,Department,Location
 John Doe,john@example.com,30,Engineer,Product,Pune
-```
 
 
 ---
